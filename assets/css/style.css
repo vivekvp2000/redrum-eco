@@ -227,6 +227,9 @@ button {
   grid-template-columns: 414px repeat(4, 1fr);
   gap: 10px;
 }
+.rare-collection-sec .product-category-grid{
+   grid-template-columns:  repeat(6, 1fr); 
+}
 .product-category-grid .product-banner-box {
   background-color: #ddffd9;
   padding: 30px 0 20px;
