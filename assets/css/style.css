@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Geist", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+.header {
+  height: 90px;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(238, 238, 240);
+}
+
+.logo a img {
+  width: 75px;
+}
