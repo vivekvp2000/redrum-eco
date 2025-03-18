@@ -8,13 +8,29 @@
 }
 :root {
   --fs-14: 14px;
+  --fs-20: 20px;
+}
+input:focus {
+  outline: none;
+}
+.grid {
+  display: grid;
 }
 a {
   color: inherit;
   text-decoration: none;
 }
+.fs-14 {
+  font-size: var(--fs-14);
+}
+.fs-20 {
+  font-size: var(--fs-20);
+}
 .text-no-wrap {
   text-wrap: nowrap;
+}
+.light-gray {
+  color: rgb(95, 95, 106);
 }
 button {
   outline: none;
@@ -227,8 +243,8 @@ button {
   grid-template-columns: 414px repeat(4, 1fr);
   gap: 10px;
 }
-.rare-collection-sec .product-category-grid{
-   grid-template-columns:  repeat(6, 1fr); 
+.rare-collection-sec .product-category-grid {
+  grid-template-columns: repeat(6, 1fr);
 }
 .product-category-grid .product-banner-box {
   background-color: #ddffd9;
@@ -300,9 +316,111 @@ button {
   color: rgb(95, 95, 106);
   font-size: var(--fs-14);
 }
-.discount{
+.discount {
   color: rgb(95, 95, 106);
 }
-.seller-product-title{
+.seller-product-title {
   color: rgb(21, 21, 23);
 }
+
+/* Footer Css  */
+.footer-left {
+  max-width: 400px;
+}
+.footer-list li a {
+  font-size: var(--fs-14);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.footer-logo img {
+  max-width: 100px;
+}
+.footer-bottom {
+  border-top: 1px solid rgb(238, 238, 240);
+  background-color: rgb(247, 247, 248);
+  padding-block: 15px;
+}
+.footer-input {
+  height: 50px;
+  padding: 20px;
+  border: 1px solid rgb(238, 238, 240);
+  max-width: 300px;
+  width: 100%;
+}
+.news-letter-btn {
+  background: rgb(218 218 221);
+  padding: 0px 20px;
+  border: 1px solid rgb(238, 238, 240);
+  font-size: 14px;
+  height: 50px;
+  color: gray;
+}
+
+.footer-spark img {
+  height: 20px;
+  position: relative;
+  width: 158px;
+}
+.footer-pay-listing {
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 130px;
+  gap: 5px;
+}
+.ship-list img {
+  width: 43px;
+  height: 29px;
+}
+.social-item {
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  background-color: #3a3a40;
+  border-radius: 50%;
+}
+.social-list {
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 130px;
+  row-gap: 5px;
+}
+.guidances-sec {
+  background-color: #fffdfc;
+  border-bottom: 1px solid rgb(238, 238, 240);
+}
+
+.fashion-card-content h5 {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.fashion-card-img {
+  height: 290px;
+  overflow: hidden;
+  border-radius: 7px;
+  border: 1px solid #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+.fashion-img-label {
+  color: white;
+  top: 18px;
+  left: 20px;
+  display: inline-block;
+  padding: 2px 10px;
+  backdrop-filter: blur(15px);
+  background: linear-gradient(
+      rgba(221, 255, 217, 0.25) 27%,
+      rgba(117, 118, 130, 0.3) 250%
+    )
+    rgba(0, 0, 0, 0);
+  border-radius: 100px;
+  border: 1px solid rgb(255 255 255 / 40%);
+  transition: all 0.5s ease-in-out;
+}
+.fashion-card:hover .fashion-card-img {
+  border-color: black;
+}
+.fashion-card:hover .fashion-img-label{
+  background-color: #E8E6E5;
+  color: black;
+}
+
