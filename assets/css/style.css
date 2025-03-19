@@ -10,8 +10,18 @@
   --fs-14: 14px;
   --fs-20: 20px;
 }
-input:focus {
+body {
+  overflow-x: hidden;
+}
+input:focus,
+.accordion-button:focus {
   outline: none;
+  box-shadow: unset;
+}
+.accordion-item {
+  border-inline: none;
+  border-radius: unset !important;
+  border-block-color: rgb(21 21 23 / 10%);
 }
 .grid {
   display: grid;
@@ -183,15 +193,23 @@ button {
 
 /* Home Marquee  */
 #animated-text-strip {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
   overflow: hidden;
-}
-#animated-text-strip .marquee {
   white-space: nowrap;
-  animation: marquee 5s linear infinite;
-  max-width: none;
+  background-color: #f5c7a9;
+  padding: 10px 0;
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: bold;
+  animation: none;
+}
+.marquee b {
+  color: rgb(117, 118, 130);
+  display: inline-block;
+  margin-inline: 1rem;
 }
 
 @keyframes marquee {
@@ -221,6 +239,10 @@ button {
 .banner-img {
   height: 100vh;
   overflow: hidden;
+  will-change: transform;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: transform 0.4s ease-out;
 }
 /* Home Product Cate  */
 .product-banner-box span {
@@ -484,11 +506,35 @@ button {
 .banner-two-listing li:hover {
   background-color: white;
 }
-.banner-two-listing li:hover span img{
+.banner-two-listing li:hover span img {
   rotate: -30deg;
 }
 
 .banner-two-title {
   font-size: 35px;
   line-height: 44px;
+}
+.faq-container {
+  background: url(/assets/images/bg-banner.png);
+  height: 647px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.faq-box {
+  padding: 40px;
+  background-color: #ffffff1f;
+  border: 1px solid rgb(21 21 23 / 10%);
+}
+
+.faq-accordion button img {
+  width: 28px;
+  display: inline-block;
+  margin-right: 8px;
+}
+@media (min-width: 1400px) {
+  section {
+    max-width: 1302px;
+    width: 100%;
+    margin: auto;
+  }
 }
