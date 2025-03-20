@@ -1,0 +1,49 @@
+@media (max-width: 1026px) {
+}
+@media (max-width: 767px) {
+    .mob-menu{
+        display: flex;
+      }
+    .header {
+        height: 70px;
+      }
+    
+  .header-navbar {
+    padding-inline: 12px !important;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .foot-left-bottom form {
+    flex-direction: column;
+  }
+  .footer-input {
+    max-width: unset;
+  }
+  .social-list {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+  }
+  .footer-pay-listing {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .home-container {
+    padding-inline: 22px;
+  }
+  .rare-collection-sec .product-category-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .product-category-grid {
+    grid-template-columns: 414px repeat(1, 1fr);
+  }
+}
+@media (max-width: 567px) {
+  .rare-collection-sec .product-category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .product-category-grid {
+    grid-template-columns: 414px repeat(1, 1fr);
+  }
+}

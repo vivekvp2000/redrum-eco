@@ -28,3 +28,31 @@ gsap.to(".marquee", {
   repeat: -1,
   ease: "linear",
 });
+(() => {
+  Fancybox.bind("[data-fancybox]", {});
+})();
+
+(() => {
+  var swiper = new Swiper(".reviews-slider", {
+    loop: true,
+    autoplay: true,
+    spaceBetween: 20,
+    slidesPerView: 2,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      567: {
+        slidesPerView: 2,
+      },
+      0: {
+        slidesPerView: 1,
+      },
+    },
+  });
+  document.querySelector(".swiper-button-next").innerHTML =
+    '<i class="ri-arrow-right-s-line text-black fs-5"></i>';
+  document.querySelector(".swiper-button-prev").innerHTML =
+    '<i class="ri-arrow-left-s-line text-black fs-5"></i>';
+})();
