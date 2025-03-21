@@ -1,13 +1,23 @@
 @media (max-width: 1026px) {
 }
 @media (max-width: 767px) {
-    .mob-menu{
-        display: flex;
-      }
-    .header {
-        height: 70px;
-      }
-    
+  .product-detail-imgs {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .product-detail-first {
+    height: 340px;
+}
+.product-detail-imgs a:first-child{
+  grid-column: 1 / -1;
+}
+  .mob-menu {
+    display: flex;
+  }
+  .header {
+    height: 70px;
+  }
+
   .header-navbar {
     padding-inline: 12px !important;
   }

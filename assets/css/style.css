@@ -8,6 +8,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "garamond", sans-serif;
+  /* font-family: "Geist"; */
   list-style-type: none;
   text-decoration: none;
 }
@@ -33,6 +34,9 @@ input:focus,
 }
 .grid {
   display: grid;
+}
+.p-20{
+  padding: 20px;
 }
 a {
   color: inherit;
@@ -655,5 +659,14 @@ button {
   height: 60px;
   cursor: pointer;
 }
-
+.free-text{
+  color: #1f8d4a;
+  font-weight: 500;
+}
+.delivery-details-card .p-20:not(:last-child){
+  border-bottom: 1px solid #eeeef0;
+}
+.sidebar-faq .accordion-button{
+background-color: transparent;
+}
 /* Product Page Css  */
